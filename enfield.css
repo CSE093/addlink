@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    background-color: rgb(175, 0, 0);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header {
+    padding: 20px 40px; 
+    background-color: rgb(175, 0, 0);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+header .logo img {
+    height: 70px; 
+    width: auto;
+    transition: transform 0.3s ease-in-out; 
+}
+
+header .logo img:hover {
+    transform: scale(1.1); 
+}
+
+header h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 36px; 
+    text-align: center;
+    flex-grow: 1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    transition: color 0.3s ease-in-out; 
+}
+
+.navbar a:hover {
+    color: rgb(255, 215, 0); 
+}
+
+#home {
+    margin-top: 100px; 
+    transform: skew(20deg, 10deg);
+    transition: transform 0.3s ease;
+}
+
+#home img {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px; 
+}
+
+#home:hover {
+    transform: skew(10deg, 5deg); 
+}
+
+.grid, .grid1 {
+    padding: 20px;
+}
+
+.grid1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#videos {
+    text-align: center;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+#videos video {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+}
+
+#videos video:hover {
+    transform: scale(1.05); 
+}
+
+#move {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#move #slide {
+    display: inline-block;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.motorcycle1, .motorcycle2, .motorcycle3 {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.motorcycle1 img, .motorcycle2 img, .motorcycle3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.motorcycle1 img:hover, .motorcycle2 img:hover, .motorcycle3 img:hover {
+    transform: scale(1.05); 
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.89);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+footer .icon a {
+    margin: 0 15px;
+}
+
+footer .icon img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+footer .icon img:hover {
+    transform: scale(1.1); 
+}
+
+#models {
+    background-image: url('arjun-sakariya-EtPPhV4sZ8o-unsplash.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; 
+    padding: 50px 0;
+}
+
+#models h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#advertisement {
+    background-color: rgba(255, 0, 0, 0.7); 
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    max-width: 600px;
+    margin: 30px auto; 
+}
+
+.transparent-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+#contact {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.form {
+    background: linear-gradient(to right, black, red);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+#models img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover; 
+    margin: 0 auto;
+}
+
+#move:hover #slide {
+    transform: translateX(-50%); 
+}
+
+@media (max-width: 768px) {
+    #move {
+        flex-direction: column;
+    }
+
+    #slide {
+        flex-direction: column;
+    }
+
+    .motorcycle1, .motorcycle2 {
+        width: 80%;
+        height: 250px;
+    }
+}
